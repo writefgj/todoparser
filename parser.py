@@ -26,6 +26,7 @@ def todo_list(todostr, todotitle):
 
 
 def valid_user(dicuser):
+    """Проверяет корректность данных пользователя"""
     if 'username' in dicuser and 'id' in dicuser and 'name' in dicuser and 'email' in dicuser and 'company' in dicuser:
         return True
     else:
@@ -33,6 +34,7 @@ def valid_user(dicuser):
 
 
 def valid_todo(dictodo):
+    """Проверяет корректность данных задач"""
     if 'userId' in dictodo and 'completed' in dictodo and 'title' in dictodo:
         return True
     else:
